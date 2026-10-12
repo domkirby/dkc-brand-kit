@@ -1,0 +1,13 @@
+---
+description: Dom Kirby Creative brand rules, tokens and components — apply to any DKC copy, UI or styling work
+globs: ["**/*.{astro,vue,tsx,jsx,html,css,scss,blade.php,php,md,mdx}"]
+alwaysApply: false
+---
+
+Follow the Dom Kirby Creative brand kit. Read `AGENTS.md` and `.specify/memory/constitution.md` (installed projects: under `dkc-brand/`).
+
+- Use tokens, never raw values: `tokens/tokens.css`, `tokens/tailwind-theme.css` or `tokens/tokens.ts`.
+- `color.green` is a fill only; green text is `color.green-deep`; text on green is navy. `color.logo-*` is logo-only.
+- Poppins headings/numerals/prices, Raleway everything else, named text styles only.
+- No shadows, gradients, emoji or exclamation marks. Prices in full with units.
+- Logos only from `assets/logos/`. WCAG 2.2 AA with visible focus states.

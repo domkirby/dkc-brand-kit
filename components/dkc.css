@@ -1,0 +1,57 @@
+/* Dom Kirby Creative — reference component styles.
+   Requires tokens/tokens.css (or the Tailwind theme) and the Poppins + Raleway fonts.
+   Values measured from domkirbycreative.com on 2026-10-10. */
+
+.dkc-page { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); margin: 0; }
+
+/* Buttons */
+.dkc-btn { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-sans); font-size: 15.5px; font-weight: 700; text-decoration: none; border: 0; cursor: pointer; }
+.dkc-btn-primary { background: var(--color-green); color: var(--color-navy); border-radius: var(--radius-pill); padding: var(--space-4) var(--space-7-5); }
+.dkc-btn-secondary { background: transparent; color: var(--color-navy); padding: var(--space-4) var(--space-3); border-bottom: var(--border-width-underline) solid var(--color-navy); }
+
+/* Eyebrow */
+.dkc-eyebrow { display: inline-block; font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: .3px; text-transform: uppercase; color: var(--color-green-deep); background: var(--color-paper-2); border: var(--border-width-hairline) solid var(--color-line); border-radius: var(--radius-pill); padding: var(--space-1-5) var(--space-3-5); }
+
+/* Headings */
+.dkc-h1 { font-family: var(--font-heading); font-weight: 700; font-size: clamp(40px, 5.2vw, 68px); line-height: 1.03; letter-spacing: -.025em; color: var(--color-navy); margin: 0 0 var(--space-6-5); }
+.dkc-h2 { font-family: var(--font-heading); font-weight: 700; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.25; letter-spacing: -.025em; color: var(--color-ink); margin: 0; }
+.dkc-dot { color: var(--color-green-deep); }
+.dkc-lead { font-size: 19px; line-height: 31px; color: var(--color-muted); margin: 0; }
+
+/* Process step */
+.dkc-step { max-width: 295px; }
+.dkc-step-num { font-family: var(--font-heading); font-weight: 800; font-size: 38px; line-height: 1; color: var(--color-green-deep); }
+.dkc-step-title { font-family: var(--font-heading); font-weight: 700; font-size: 15.5px; line-height: 23.25px; color: var(--color-ink); margin: 8px 0; }
+.dkc-step p { font-size: 14px; line-height: 22.75px; color: var(--color-muted); margin: 0; }
+
+/* Pricing */
+.dkc-pricing { display: grid; grid-template-columns: repeat(3, 1fr); list-style: none; margin: 0; padding: 0; }
+.dkc-price-cell { position: relative; background: var(--color-surface); padding: var(--space-8) var(--space-9); border-right: var(--border-width-hairline) dashed var(--color-line); }
+.dkc-price-cell:last-child { border-right: 0; }
+.dkc-arrow { position: absolute; top: 28px; left: -12px; width: 24px; height: 24px; border-radius: var(--radius-pill); background: var(--color-green); color: var(--color-navy); font-size: 14px; font-weight: 800; line-height: 24px; text-align: center; }
+.dkc-price-head { display: flex; align-items: baseline; gap: 10px; }
+.dkc-price-head .num { font-family: var(--font-heading); font-weight: 800; font-size: 28px; line-height: 28px; color: var(--color-green-deep); }
+.dkc-price-head .lbl { font-family: var(--font-heading); font-weight: 700; font-size: 14px; line-height: 20px; letter-spacing: .35px; text-transform: uppercase; color: var(--color-muted); }
+.dkc-price { font-family: var(--font-heading); font-weight: 800; font-size: 32px; color: var(--color-navy); margin: 14px 0 8px; }
+.dkc-price small { font-family: var(--font-heading); font-weight: 600; font-size: 14px; line-height: 21px; color: var(--color-muted); }
+.dkc-price-cell p { font-size: 13.5px; line-height: 21.94px; color: var(--color-muted); margin: 0 0 20px; }
+.dkc-checks { list-style: none; margin: 0; padding: 0; font-size: 14px; line-height: 21px; color: var(--color-ink); }
+.dkc-checks li { display: flex; gap: 10px; margin-bottom: 8px; }
+.dkc-checks li::before { content: "✓"; color: var(--color-green-deep); font-weight: 800; }
+
+/* Lead form */
+.dkc-form { background: var(--color-navy); border-radius: var(--radius-panel); padding: var(--space-16); color: var(--color-on-navy); }
+.dkc-form h2 { font-family: var(--font-heading); font-weight: 700; font-size: 36px; line-height: 54px; letter-spacing: -.9px; margin: 0; color: var(--color-on-navy); }
+.dkc-form > p { font-size: 16px; line-height: 26px; color: var(--color-on-navy-body); margin: 0 0 28px; }
+.dkc-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 28px; }
+.dkc-field label { display: block; font-size: 13px; font-weight: 600; color: var(--color-on-navy-muted); margin-bottom: 4px; }
+.dkc-field input, .dkc-field select { width: 100%; box-sizing: border-box; background: transparent; border: 0; border-bottom: var(--border-width-underline) solid var(--color-green); color: var(--color-on-navy); font: 600 15px var(--font-sans); padding: 8px 0; outline: none; }
+.dkc-form .dkc-btn-primary { padding: var(--space-4) 34px; margin-top: 28px; }
+
+/* Header */
+.dkc-utility { background: var(--color-navy); color: var(--color-on-navy-soft); font-size: 13px; display: flex; justify-content: space-between; padding: 8px var(--space-8); }
+.dkc-header { background: var(--color-paper); border-bottom: var(--border-width-hairline) solid var(--color-line); display: flex; align-items: center; justify-content: space-between; padding: 14px var(--space-8); }
+.dkc-header img { height: var(--size-logo-height); width: auto; display: block; }
+.dkc-nav { display: flex; gap: 28px; }
+.dkc-nav a { font-size: 15px; font-weight: 600; color: var(--color-navy); text-decoration: none; padding-bottom: 4px; border-bottom: var(--border-width-underline) solid transparent; }
+.dkc-nav a[aria-current] { border-bottom-color: var(--color-green); }

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DKC Components</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Raleway:wght@400..800&display=swap">
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<link rel="stylesheet" href="../dkc.css">
+<style>
+  .demo { max-width: 1100px; margin: 0 auto; padding: 48px 32px 96px; }
+  .demo section { margin-top: 56px; }
+  .demo h2.kicker { font: 600 13px var(--font-sans); letter-spacing: .3px; text-transform: uppercase; color: var(--color-muted); margin: 0 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--color-line); }
+  .row { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .sw { border: 1px solid var(--color-line); background: var(--color-surface); font: 13px/1.4 var(--font-sans); }
+  .sw i { display: block; height: 64px; }
+  .sw span { display: block; padding: 8px 10px; }
+  @media (max-width: 760px) { .dkc-pricing, .dkc-fields { grid-template-columns: 1fr; } .dkc-price-cell { border-right: 0; border-bottom: 1px dashed var(--color-line); } .dkc-arrow { display: none; } .dkc-nav { display: none; } .dkc-form { padding: 32px; } }
+</style>
+</head>
+<body class="dkc-page">
+<div class="dkc-utility"><span>hello@domkirbycreative.com</span><span>Client Support →</span></div>
+<header class="dkc-header"><img src="../../assets/logos/dkc-horizontal-dark.svg" alt="Dom Kirby Creative"><nav class="dkc-nav"><a href="#" aria-current="page">Home</a><a href="#">MSP Websites</a><a href="#">Web Hosting</a><a href="#">Why Static</a><a href="#">Get in Touch</a></nav></header>
+
+<main class="demo">
+  <span class="dkc-eyebrow">For B2B small businesses</span>
+  <h1 class="dkc-h1" style="margin-top:18px">Built for people<span class="dkc-dot">.</span> Not platforms<span class="dkc-dot">.</span></h1>
+  <p class="dkc-lead" style="max-width:520px">We build fast, secure websites for B2B small businesses — no bloat, no noise, no legacy code holding you back.</p>
+  <div class="row" style="margin-top:28px"><a class="dkc-btn dkc-btn-primary" href="#">Start a project</a><a class="dkc-btn dkc-btn-secondary" href="#">See pricing</a></div>
+
+  <section>
+    <h2 class="kicker">Color</h2>
+    <div class="swatches">
+      <div class="sw"><i style="background:var(--color-paper)"></i><span>paper #fbf9f3</span></div>
+      <div class="sw"><i style="background:var(--color-paper-2)"></i><span>paper-2 #f3f0e7</span></div>
+      <div class="sw"><i style="background:var(--color-ink)"></i><span>ink #171717</span></div>
+      <div class="sw"><i style="background:var(--color-muted)"></i><span>muted #68655f</span></div>
+      <div class="sw"><i style="background:var(--color-navy)"></i><span>navy #0d1440</span></div>
+      <div class="sw"><i style="background:var(--color-green)"></i><span>green #5fbf46</span></div>
+      <div class="sw"><i style="background:var(--color-green-deep)"></i><span>green-deep #3e9a2c</span></div>
+      <div class="sw"><i style="background:var(--color-logo-blue)"></i><span>logo-blue #1025a1 (logo only)</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="kicker">Process steps</h2>
+    <div class="steps">
+      <div class="dkc-step"><div class="dkc-step-num">01</div><h3 class="dkc-step-title">Audit</h3><p>We start by looking at what you have — site, brand, content, all of it — and telling you honestly what's working, what's not, and why.</p></div>
+      <div class="dkc-step"><div class="dkc-step-num">02</div><h3 class="dkc-step-title">Redesign</h3><p>We rebuild your site from the ground up on modern, static architecture (Astro) — faster to load, harder to hack.</p></div>
+      <div class="dkc-step"><div class="dkc-step-num">03</div><h3 class="dkc-step-title">Simplify</h3><p>We rewrite and tighten your copy around your actual brand and your actual audience — cutting the generic, keeping the you.</p></div>
+      <div class="dkc-step"><div class="dkc-step-num">04</div><h3 class="dkc-step-title">Manage</h3><p>We keep it running: hosting, performance, small updates, and steady iteration.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="kicker">Pricing</h2>
+    <ol class="dkc-pricing">
+      <li class="dkc-price-cell"><div class="dkc-price-head"><span class="num">01</span><span class="lbl">Audit</span></div><div class="dkc-price">$500<small>one-time</small></div><p>An AI-assisted look at your current site, brand, and content — what's working, what's not, and why.</p><ul class="dkc-checks"><li>Full review of your existing site and brand</li><li>Content and messaging assessment</li><li>Honest, plain findings — no upsell pressure</li></ul></li>
+      <li class="dkc-price-cell"><span class="dkc-arrow">→</span><div class="dkc-price-head"><span class="num">02</span><span class="lbl">Redesign</span></div><div class="dkc-price">$1,500<small>one-time</small></div><p>AI-assisted, human-led. We rebuild your site on modern static architecture and rewrite your copy for your actual audience.</p><ul class="dkc-checks"><li>Full rebuild on static architecture (Astro)</li><li>Simplify — copy rewritten, included</li><li>Up to 5 page templates, 15 pages</li></ul></li>
+      <li class="dkc-price-cell"><span class="dkc-arrow">→</span><div class="dkc-price-head"><span class="num">03</span><span class="lbl">Manage</span></div><div class="dkc-price">$49.95<small>per month</small></div><p>Ongoing hosting, performance, and iteration. Static sites carry less overhead — so you pay less to keep it running.</p><ul class="dkc-checks"><li>Hosting included — global CDN, automatic HTTPS</li><li>Small updates and steady iteration</li><li>No plugins or servers to patch</li></ul></li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="dkc-form">
+      <h2>Ready to get started?</h2>
+      <p>Tell us a bit about yourself using the form, and we'll get back to you soon.</p>
+      <div class="dkc-fields">
+        <div class="dkc-field"><label for="f1">First name</label><input id="f1"></div>
+        <div class="dkc-field"><label for="f2">Last name</label><input id="f2"></div>
+        <div class="dkc-field"><label for="f3">Email</label><input id="f3" type="email"></div>
+        <div class="dkc-field"><label for="f4">Company or brand name</label><input id="f4"></div>
+      </div>
+      <button class="dkc-btn dkc-btn-primary">Send it over</button>
+    </div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* Dom Kirby Creative tokens. GENERATED from tokens/tokens.json by scripts/build_tokens.py, do not edit by hand. */
+
+:root {
+  --color-paper: #fbf9f3;
+  --color-paper-2: #f3f0e7;
+  --color-surface: #ffffff;
+  --color-ink: #171717;
+  --color-muted: #68655f;
+  --color-navy: #0d1440;
+  --color-green: #5fbf46;
+  --color-green-deep: #3e9a2c;
+  --color-line: #17140f1f;
+  --color-on-navy: #ffffff;
+  --color-on-navy-soft: rgba(255, 255, 255, 0.8);
+  --color-on-navy-link: rgba(255, 255, 255, 0.78);
+  --color-on-navy-body: rgba(255, 255, 255, 0.72);
+  --color-on-navy-muted: rgba(255, 255, 255, 0.6);
+  --color-on-navy-fill: rgba(255, 255, 255, 0.1);
+  --color-logo-blue: #1025a1;
+  --color-logo-navy: #0b1970;
+  --color-logo-green: #7ed957;
+  --font-heading: Poppins, sans-serif;
+  --font-sans: "Raleway Variable", Raleway, Helvetica, Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --space-1-5: 6px;
+  --space-3: 12px;
+  --space-3-5: 14px;
+  --space-4: 16px;
+  --space-6-5: 26px;
+  --space-7-5: 30px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --radius-pill: 9999px;
+  --radius-panel: 26px;
+  --radius-image: 22px;
+  --radius-image-sm: 20px;
+  --radius-2xl: 16px;
+  --radius-lg: 8px;
+  --border-width-hairline: 1px;
+  --border-width-underline: 2px;
+  --size-container: 1240px;
+  --size-container-narrow: 660px;
+  --size-logo-height: 36px;
+  --size-breakpoint-sm: 40rem;
+  --size-breakpoint-md: 48rem;
+  --duration-default: 150ms;
+}
+
+/* Text styles: apply with class="dkc-text-<name>". */
+.dkc-text-display-1 { font-family: var(--font-heading); font-size: clamp(40px, 5.2vw, 68px); font-weight: 700; line-height: 1.03; letter-spacing: -0.025em; color: var(--color-navy); }
+.dkc-text-display-2 { font-family: var(--font-heading); font-size: clamp(28px, 3.4vw, 40px); font-weight: 700; line-height: 50px; letter-spacing: -0.025em; color: var(--color-ink); }
+.dkc-text-form-title { font-family: var(--font-heading); font-size: 36px; font-weight: 700; line-height: 54px; letter-spacing: -0.9px; }
+.dkc-text-numeral { font-family: var(--font-heading); font-size: 38px; font-weight: 800; line-height: 1; letter-spacing: 0px; }
+.dkc-text-price { font-family: var(--font-heading); font-size: 32px; font-weight: 800; line-height: normal; letter-spacing: 0px; }
+.dkc-text-numeral-sm { font-family: var(--font-heading); font-size: 28px; font-weight: 800; line-height: 28px; letter-spacing: 0px; }
+.dkc-text-title-sm { font-family: var(--font-heading); font-size: 15.5px; font-weight: 700; line-height: 23.25px; letter-spacing: 0px; }
+.dkc-text-stage-label { font-family: var(--font-heading); font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0.35px; text-transform: uppercase; }
+.dkc-text-price-unit { font-family: var(--font-heading); font-size: 14px; font-weight: 600; line-height: 21px; letter-spacing: 0px; }
+.dkc-text-lead { font-family: var(--font-sans); font-size: 19px; font-weight: 400; line-height: 31px; letter-spacing: 0px; }
+.dkc-text-body { font-family: var(--font-sans); font-size: 16px; font-weight: 400; line-height: 24px; letter-spacing: 0px; }
+.dkc-text-body-sm { font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: 22.75px; letter-spacing: 0px; }
+.dkc-text-caption { font-family: var(--font-sans); font-size: 13.5px; font-weight: 400; line-height: 21.94px; letter-spacing: 0px; }
+.dkc-text-nav { font-family: var(--font-sans); font-size: 15px; font-weight: 600; line-height: normal; letter-spacing: 0px; }
+.dkc-text-button { font-family: var(--font-sans); font-size: 15.5px; font-weight: 700; line-height: normal; letter-spacing: 0px; }
+.dkc-text-label { font-family: var(--font-sans); font-size: 13px; font-weight: 600; line-height: normal; letter-spacing: 0px; }
+.dkc-text-utility { font-family: var(--font-sans); font-size: 13px; font-weight: 400; line-height: normal; letter-spacing: 0px; }
+.dkc-text-eyebrow { font-family: var(--font-sans); font-size: 12px; font-weight: 700; line-height: normal; letter-spacing: 0.3px; text-transform: uppercase; }
